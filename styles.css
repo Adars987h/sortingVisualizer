@@ -1,14 +1,13 @@
 /* Body styles */
 body {
-    font-family: 'Courier New', Courier, monospace; 
-    background-color: #1e1e1e; 
-    color: #c5c6c7; /* Light text color */
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #1e1e1e;
+    color: #c5c6c7;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: 100vh; */
 }
 
 /* Container styles */
@@ -19,9 +18,11 @@ body {
 
 /* Heading styles */
 h1 {
-    color: #fe9e0d; /* Cyan color for heading */
+    color: rgb(0, 157, 255);
+    /* Cyan color for heading */
     margin-bottom: 20px;
-    font-size: 2em; /* Larger font size for the heading */
+    font-size: 2em;
+    /* Larger font size for the heading */
 }
 
 /* Controls section styles */
@@ -31,47 +32,54 @@ h1 {
 }
 
 
-#controls div{
-padding-bottom: 10px;
+#controls div {
+    padding-bottom: 10px;
 }
 
-.input input{
+.input input {
     padding: 10px;
     width: 300px;
     margin-right: 10px;
-    border: 1px solid #e74c3c;
+    margin-bottom: 20px;
+    border: 1px solid #ffffff;
     border-radius: 5px;
-    background-color: #0b0c10; /* Darker background for inputs */
-    color: #c5c6c7;
-    font-size: 1em; /* Consistent font size */
+    background-color: #0b0c10;
+    /* Darker background for inputs */
+    color: #ffffff;
+    font-size: 1em;
+    /* Consistent font size */
 }
-
-
 
 #controls button {
     padding: 10px 15px;
+    margin: 10px 5px;
     border: none;
+    width: 150px;
     border-radius: 5px;
     cursor: pointer;
-    margin: 0 5px; /* Space between buttons */
-    font-size: 1em; /* Consistent font size */
+    font-size: 1em;
+    /* Consistent font size */
+    border: 1px solid rgb(0, 157, 255);
 }
 
 /* Specific button styles */
-.sortType button{
-    background-color: #fe9e0d;
+.sortType button {
+    background-color: rgb(0, 157, 255);
     color: #ffffff;
 }
 
-.sortType button:hover
- {
+.sortType button:hover {
     background-color: #ffffff;
-    color: #fe9e0d;
+    color: rgb(0, 157, 255);
+    /* Cyan color for heading */
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.8);
+
 }
 
 #controls #stopBtn {
     background: linear-gradient(45deg, #ff6b6b, #ff4757);
     color: #0b0c10;
+    border: none;
 }
 
 #controls #stopBtn:hover {
@@ -82,6 +90,7 @@ padding-bottom: 10px;
 #controls #clearBtn {
     background: linear-gradient(45deg, #a29bfe, #6c5ce7);
     color: #fff;
+    border: none;
 }
 
 #controls #clearBtn:hover {
@@ -95,13 +104,15 @@ padding-bottom: 10px;
     justify-content: center;
     align-items: flex-end;
     height: 500px;
-    border: 3px solid #f1c40f;
+    border: 3px solid rgb(0, 157, 255);
     background-color: #0b0c10;
-    overflow: hidden; /* Ensure bars don't overflow */
+    overflow: hidden;
+    /* Ensure bars don't overflow */
     margin-top: 20px;
     padding: 10px;
     border-radius: 25px;
-    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.7); /* Add shadow for better visual separation */
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.7);
+    /* Add shadow for better visual separation */
 }
 
 /* Bar styles */
@@ -113,7 +124,8 @@ padding-bottom: 10px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    color: white; /* Label text color */
+    color: white;
+    /* Label text color */
     font-size: 12px;
 }
 
@@ -127,13 +139,16 @@ padding-bottom: 10px;
 
 /* Bar color styles based on value */
 .bar.red {
-    background-color: #e74c3c; /* Red color for large values */
+    background-color: #e74c3c;
+    /* Red color for large values */
 }
 
 .bar.yellow {
-    background-color: #f1c40f; /* Yellow color for medium values */
+    background-color: #f1c40f;
+    /* Yellow color for medium values */
 }
 
 .bar.green {
-    background-color: #2ecc71; /* Green color for small values */
+    background-color: #2ecc71;
+    /* Green color for small values */
 }
