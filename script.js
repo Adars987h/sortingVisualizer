@@ -55,6 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     clearBtn.addEventListener('click', () => {
         clearVisualization();
+        location.reload();
     });
 
     function validateInput(input) {
